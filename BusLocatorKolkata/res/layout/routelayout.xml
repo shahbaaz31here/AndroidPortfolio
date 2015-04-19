@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:background="#26b4f6">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+    	<TextView
+    	    android:id="@+id/textview0"
+    	    android:layout_width="95dp"
+    	    android:layout_height="wrap_content"
+    	    android:text="  Type :"
+    	    android:textColor="#ffffff"
+    	    android:textSize="20dp"
+			/>
+
+    	<TextView
+        	android:id="@+id/busnoval"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#ffffff"
+        	android:textSize="20dp" 
+        	android:text="  " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+    	<TextView
+        	android:id="@+id/textview1"
+        	android:layout_width="95dp"
+        	android:layout_height="wrap_content"
+        	android:textColor="#ffffff"
+        	android:textSize="20dp" 
+        	
+        	android:text="  From : " />
+    	<TextView
+        	android:id="@+id/fromval"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#ffffff"
+        	android:textSize="20dp" 
+        	android:text="  " />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+       
+        android:text="  To :  " />
+    <TextView
+        android:id="@+id/toval"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+       
+        android:textColor="#ffffff"
+        android:text="  " />
+    
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="       Important Bus Stops"
+        android:background="@drawable/btn2"
+        android:textSize="20dp"
+        android:textColor="#000000"
+       />
+    </LinearLayout>
+       
+         />
+         <ScrollView
+    android:id="@+id/Scrollbusno"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+         
+    
+    <TextView
+        android:fadeScrollbars="true"
+        android:id="@+id/routview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text=" route"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+    </ScrollView>
+
+   
+
+</LinearLayout>

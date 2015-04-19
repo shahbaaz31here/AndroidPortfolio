@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="4.0"
+    android:background="#ffffff">
+
+   
+
+    
+   
+	
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight=".8"> 
+	    <AutoCompleteTextView
+	        android:id="@+id/autoBusNo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:completionThreshold="1"
+	       android:inputType="textMultiLine"
+                android:lines="1" 
+	        android:hint="Enter bus no." >
+				
+	        <requestFocus />
+	    </AutoCompleteTextView>
+    </LinearLayout>
+    
+     
+      <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/search"
+    android:layout_weight="2.5">
+	     </LinearLayout>
+     
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="0.6"> 
+    <Button
+        android:id="@+id/Back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" 
+        android:onClick="onBack"
+        android:background="#26b4f6"
+        android:textSize="20dp"/>
+   	 </LinearLayout>
+    
+    
+
+</LinearLayout>

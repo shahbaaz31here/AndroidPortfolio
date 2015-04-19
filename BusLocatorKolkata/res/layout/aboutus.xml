@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3.0"
+    android:background="#317adb">
+
+    
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="\n\n
+        Version 1.0\n
+        Released in 2014\n\n
+        Email us:-letsblink4all@gmail.com\n\n
+        Do feedback us so that we \n
+        can update more routes.\n\n
+        Thank you for using our app.\n"
+         android:layout_weight="2.7"/>
+
+ <Button
+        android:id="@+id/BackAbout"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Back" 
+        android:onClick="onBack"
+        android:layout_weight="0.3"
+        android:background="@drawable/btn2"/>
+    
+</LinearLayout>

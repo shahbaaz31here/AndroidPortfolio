@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="9.0"
+    android:background="#26b4f6"
+    
+    >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+     
+        <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewSource"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+				android:completionThreshold="1"
+                android:hint="Enter Source"
+                android:inputType="textMultiLine"
+                android:lines="1" 
+                android:layout_weight="1.0"
+        		/>
+
+         <Spinner
+             android:id="@+id/from_spin"
+             android:layout_width="30dp"
+             android:layout_height="match_parent"
+             android:textSize="15dp" 
+             android:layout_weight="1.0"
+            
+            />
+
+            <requestFocus />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+       <!--  android:background="@drawable/gray_black" -->
+		
+
+        <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewDestination"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:completionThreshold="1"
+                android:hint="Enter Destination"
+                android:inputType="textMultiLine"
+                android:lines="1" 
+                android:layout_weight="1.0" />
+
+        <Spinner
+        android:id="@+id/to_spin"
+        android:layout_width="30dp"
+             android:layout_height="match_parent"
+             android:textSize="15dp" 
+             android:layout_weight="1.0"
+            
+             />
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/LinearLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+      <!--   android:background="@drawable/gray_black" 
+      android:background="@drawable/btn" -->
+   <RadioGroup
+	    android:id="@+id/radioGroup1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="10dp"
+	    android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="All Busses" 
+            android:onClick="selectCompany"/>
+		 <RadioButton
+            android:id="@+id/Volvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="AC Busses" 
+            android:onClick="selectCompany"/>
+        
+        
+    </RadioGroup>
+     
+        
+   
+
+    <Button
+        android:id="@+id/search"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH" 
+        android:onClick="onSearch"
+        android:textSize="20dp"
+      	android:layout_weight="1.0"
+        android:background="@drawable/btn2"/>
+    
+     
+      
+    
+    </LinearLayout>
+    <View
+             android:layout_width="fill_parent"
+             android:layout_height="4dp"
+             android:background="#000000"/>
+   
+        <ListView
+        android:id="@+id/routeList"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp" 
+        
+       	android:layout_weight="5.0">
+        <!-- android:background="@drawable/gray_black" -->
+    	</ListView>
+    	
+   <Button
+        android:id="@+id/Back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="BACK" 
+        android:onClick="onBackSd"
+        android:layout_weight="1.0"
+        android:background="@drawable/btn2"
+        
+        />
+        <!-- android:background="@drawable/gray_black" -->
+    
+</LinearLayout>

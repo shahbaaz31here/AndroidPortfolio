@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="3.0"
+    >
+    
+   
+    
+
+    <ListView
+        android:id="@+id/Buslist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:cacheColorHint="#00000000"
+ 		android:listSelector="#00000000" 
+ 	    android:dividerHeight="3dp"
+ 	    android:divider="#26b4f6"
+        >
+    </ListView>
+    
+    <Button
+        android:id="@+id/Back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Back" 
+        android:onClick="onBack"
+        android:background="#26b4f6"
+        android:layout_weight="0.3"/>
+    
+
+</LinearLayout>
